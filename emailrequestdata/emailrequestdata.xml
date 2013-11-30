@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+   <name>Email Request Data</name>
+    <version>1.0</version>
+    <creationDate>May 2012</creationDate>
+    <author>Team JoomlaXi</author>
+    <authorEmail>bhavya.nick@gmail.com</authorEmail>
+    <authorUrl>https://github.com/rbsl-bhavya</authorUrl>
+    <license>GNU General Public License v2</license>
+    <description>Email Request Data</description>
+	<files>
+		<filename plugin="emailrequestdata">emailrequestdata.php</filename>
+	</files>
+	<config>
+		<fields addpath="">
+			<fieldset name="basic">
+			<field 	name="option"	label="Option"
+				description="Enter Option of the url" type="text"
+				default="" size="15"
+				/>
+			<field 	name="view"	label="View"
+				description="Enter view of the url" type="text"
+				default="" size="15"
+				/>
+			<field 	name="task"	label="Task"
+				description="Enter task of the url" type="text"
+				default="" size="15"
+				/>
+			<field 	name="parameter_prefix"	label="Parameter Prefix"
+				description="Enter prefix of the parameters which you want to collect for email. If left blank all the parameters will be sent." type="text"
+				default="" size="15"
+				/>
+			<field 	name="email_to_send"	label="Email Address"
+				description="Enter the email address on which selected parameters to be send" type="text"
+				default="" size="15"
+				/>
+			<field 	name="redirect_url"	label="Redirect URL"
+				description="Enter URL to which redirect" type="text"
+				default="" size="30" 
+				/>
+		<!-- <field 	name="delay_in_redirection"	label="Delay in Redirection"
+				description="Enter time in seconds to introduce delay in redirection" type="text"
+				default="" size="15" 
+				/>  -->		
+			</fieldset>
+		</fields>
+	 </config>
+</extension>
